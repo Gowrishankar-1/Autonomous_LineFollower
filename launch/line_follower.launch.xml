@@ -1,0 +1,3 @@
+<launch>
+   <node name = "line_follower" pkg = "demonstration3" exec = "line_follower" output= "screen"/>
+</launch>
