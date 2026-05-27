@@ -13,17 +13,17 @@ setup(
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
         (os.path.join('share', package_name, 'launch'),
-            glob('launch/*.xml')),
+            glob('launch/*.launch.xml')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='gowri',
     maintainer_email='gowrishankar2001@hotmail.com',
-    description='Line follower package',
+    description='Demonstration 3 package',
     license='Apache License 2.0',
     entry_points={
         'console_scripts': [
-            'line_follower = demonstration3.line_follower:main',
+            'demo3 = demonstration3.demo3:main',
         ],
     },
 )
