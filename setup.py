@@ -12,18 +12,18 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
-        (os.path.join('share', package_name, 'launch'),
-            glob('launch/*.launch.xml')),
+         (os.path.join('share', package_name, 'launch'), glob('launch/*.launch.xml')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='gowri',
     maintainer_email='gowrishankar2001@hotmail.com',
-    description='Demonstration 3 package',
+    description='Line follower package',
     license='Apache License 2.0',
     entry_points={
         'console_scripts': [
-            'demo3 = demonstration3.demo3:main',
+            "demo3 = demonstration3.demo3:main",
+            
         ],
     },
 )

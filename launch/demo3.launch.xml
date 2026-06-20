@@ -1,5 +1,4 @@
 <launch>
     <include file="$(find-pkg-share practice_mazes)/launch/line_world_2.launch.xml"/>
-
     <node name="demo3" pkg="demonstration3" exec="demo3" output="screen"/>
 </launch>
